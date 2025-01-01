@@ -231,9 +231,9 @@ button {
 .btn-icon {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   /* margin-right: 5px; */
-  padding: 12px 10px;
+  padding: 12px 12px;
   font-size: 15px;
   font-weight: bold;
   color: #fff;
@@ -553,7 +553,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 
