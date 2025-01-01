@@ -43,7 +43,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Pretendard", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: #2F343B;
@@ -227,9 +227,39 @@ button {
   border-radius: 0;
 }
 
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* transition: background-color 0.3s, transform 0.2s; */
+  text-transform: uppercase;
+}
+
+.btn-icon i {
+  font-size: 35px; /* 아이콘 크기 */
+}
+
+.btn-icon:hover {
+  /* background-color: #0056b3;  호버 시 버튼 색상 변경 */
+  transform: scale(1.1); /* 호버 시 버튼 확대 효과 */
+}
+
 button:focus {
   outline: 1px dotted;
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 3px auto -webkit-focus-ring-color;
 }
 
 input,
