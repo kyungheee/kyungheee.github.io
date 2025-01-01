@@ -689,6 +689,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  align-items: flex-start !important;
 }
 
 .no-gutters {
@@ -2124,21 +2125,29 @@ textarea.form-control {
   color: #28a745;
 }
 
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
 .valid-tooltip {
   position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 5;
-  display: none;
-  max-width: 100%;
-  padding: 0.25rem 0.5rem;
-  margin-top: .1rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  color: #fff;
-  background-color: rgba(40, 167, 69, 0.9);
-  border-radius: 0.25rem;
+  top: 100%; /* 버튼의 세로 중앙 */
+  left: 50%; /* 버튼 오른쪽에 위치 */
+  margin-top: 5px; /* 버튼과 툴팁 사이 간격 */
+  transform: translateY(-50%); /* 세로 중앙 정렬 */
+  visibility: hidden; /* 기본적으로 숨김 */
+  background-color: transparent; /* 배경 없음 */
+  color: #333; /* 텍스트 색상 */
+  font-size: 0.875rem; /* 텍스트 크기 */
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
 }
+
+.tooltip-container:hover .valid-tooltip {
+  visibility: visible; /* 호버 시 툴팁 표시 */
+}
+
+
 
 .was-validated :valid ~ .valid-feedback,
 .was-validated :valid ~ .valid-tooltip,

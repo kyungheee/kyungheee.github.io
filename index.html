@@ -145,7 +145,7 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Qualification</h1>
             </div>
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-lg-6">
                     <h3 class="mb-4">Education</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
@@ -159,11 +159,11 @@
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">대학교(학사) | 건국대학교 (서울캠)</h5>
-                            <p class="mb-2"><strong>물리학과</strong> | <small>2018.03 - 2024.02</small></p>
-                            <a href="assets/졸업논문.pdf"><p>학위 논문: Twistronics에서 비틀린 다중층 그래핀의 전자적 특성</p></a>
-                            
+                            <p class="mb-2"><strong>물리학과</strong> | <small>2018.03 - 2024.02</small></p>                            
                         </div>
                     </div>
+                    <br>
+                    <br>
                     <h3 class="mb-4">Activity</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">  
@@ -171,27 +171,44 @@
                             <h5 class="font-weight-bold mb-1">고려대학교 창업동아리</h5>
                             <p class="mb-2"><strong>에어링</strong> | <small>2024.08 - 2024.12</small></p>
                             <p>인천공항 거점 수요응답형 모빌리티 서비스 ‘에어링’ 기획 및 개발</p>
-                            <button type="button" class="btn-icon-2" onclick="window.open('https://airing-ku.github.io', '_blank')">
-                                <i class="fa-solid fa-house-chimney"></i>                            
-                            </button>  
-                            <button type="button" class="btn-icon-2" onclick="window.open('https://www.instagram.com/airing_ku/', '_blank')">
-                                <i class="fa-brands fa-instagram"></i>                          
-                            </button>    
-                            <button type="button" class="btn-icon-2" onclick="window.open('https://app.certi.world/shared/rkh97', '_blank')">
-                                <i class="fa-solid fa-crown"></i>                            
-                            </button>  
-                            <button type="button" class="btn-icon-2" onclick="window.open('/assets/startup/광운대 창업캠프_발표.pdf/', '_blank')">
-                                <i class="fa-solid fa-paperclip"></i>                          
-                            </button>
+                            <div class="tooltip-container">
+                                <button type="button" class="btn-icon-2" onclick="window.open('https://airing-ku.github.io', '_blank')">
+                                    <i class="fa-solid fa-house-chimney"></i>                            
+                                </button>
+                                <div class="valid-tooltip">홈페이지</div>
+                            </div>
+                              
+                            <div class="tooltip-container">
+                                <button type="button" class="btn-icon-2" onclick="window.open('https://www.instagram.com/airing_ku/', '_blank')">
+                                    <i class="fa-brands fa-instagram"></i>                            
+                                </button>
+                                <div class="valid-tooltip">인스타그램</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <button type="button" class="btn-icon-2" onclick="window.open('https://app.certi.world/shared/rkh97', '_blank')">
+                                    <i class="fa-solid fa-crown"></i>                            
+                                </button>
+                                <div class="valid-tooltip">증명서</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <button type="button" class="btn-icon-2" onclick="window.open('/assets/startup/광운대 창업캠프_발표.pdf/', '_blank')">
+                                    <i class="fa-solid fa-paperclip"></i>                            
+                                </button>
+                                <div class="valid-tooltip">발표 자료</div>
+                            </div>
+                            
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">대학 연합 교육봉사동아리</h5>
                             <p class="mb-2"><strong>아람</strong> | <small>2018.06 - 2019.10</small></p>
-                            <p>약 1년 반 동안 구세군서울후생원 아이들에게 수학을 가르치며<br>VMS 기준 총 143시간의 봉사 시간 달성</p>
-                            <button type="button" class="btn-icon-2" onclick="window.open('/assets/사회복지 자원봉사 실적 인증서.pdf/', '_blank')">
-                                <i class="fa-solid fa-paperclip"></i>                          
-                            </button>  
+                            <p>약 1년 반 동안 구세군서울후생원 아이들에게 수학을 가르치며 VMS 기준 총 143시간의 봉사 시간 달성</p>
+                            <div class="tooltip-container">
+                                <button type="button" class="btn-icon-2" onclick="window.open('/assets/사회복지 자원봉사 실적 인증서.pdf/', '_blank')">
+                                    <i class="fa-solid fa-crown"></i>                          
+                                </button>  
+                                <div class="valid-tooltip">봉사활동 인증서</div>
+                            </div>
                         </div>
                     </div>
             </div>
@@ -202,82 +219,72 @@
                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                         <h5 class="font-weight-bold mb-1">삼성 AI Challenge : Black-box Optimization</h5>
                         <p class="mb-2"><strong>오프라인 모델 기반 Black-box 최적화 알고리즘 개발</strong> | <small>2024.08 - 2024.09</small></p>
-                        <button type="button" class="btn-icon-2"onclick="window.open('/assets/2024-2 워크샵 노경희.pdf/', '_blank')">
-                            <i class="fa-solid fa-paperclip"></i>                          
-                        </button>
-                        <span class="valid-tooltip">워크샵 발표 자료</span>
+                        <p>#반도체공정데이터 #VAE #BayesianOptimization</p>
+                        <div class="tooltip-container">
+                            <button type="button" class="btn-icon-2" onclick="window.open('/assets/2024-2 워크샵 노경희.pdf/', '_blank')">
+                                <i class="fa-solid fa-paperclip"></i>                          
+                            </button>
+                            <div class="valid-tooltip">워크샵 발표 자료</div>
+                        </div>
                     </div>
                     <div class="position-relative mb-4">
                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                         <h5 class="font-weight-bold mb-1">KCC 2024 (한국정보과학회)</h5>
                         <p class="mb-2"><strong>자율주행 차량용 인공지능이 공유 저장소 시스템에 발생시키는 I/O 분석</strong> | <small>2024.03 - 2024.06</small></p>
-                        <button type="button" class="btn-icon-2" title="논문" onclick="window.open('/assets/노경희_KCC_논문_최종.pdf/', '_blank')">
-                            <i class="fa-solid fa-paperclip"></i>                          
-                        </button>  
-                        <button type="button" class="btn-icon-2" title="포스터" onclick="window.open('/assets/노경희_KCC_포스터_최종.pdf/', '_blank')">
-                            <i class="fa-solid fa-paperclip"></i>                          
-                        </button> 
+                        <p>#삼성전자 #SAM #OpenCOOD #V2VNet #Docker #I/O데이터</p>
+                        <div class="tooltip-container">
+                            <button type="button" class="btn-icon-2" title="논문" onclick="window.open('/assets/노경희_KCC_논문_최종.pdf/', '_blank')">
+                                <i class="fa-solid fa-paperclip"></i>                          
+                            </button>
+                            <div class="valid-tooltip">논문</div>
+                        </div>
+                        <div class="tooltip-container">   
+                            <button type="button" class="btn-icon-2" title="포스터" onclick="window.open('/assets/노경희_KCC_포스터_최종.pdf/', '_blank')">
+                                <i class="fa-solid fa-paperclip"></i>                          
+                            </button> 
+                            <div class="valid-tooltip">포스터</div>
+                        </div> 
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-    <!-- Qualification2222 Start -->
-    <div class="container-fluid py-5" id="project">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Projects</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Data Science/ML</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">대학원(석사) | 고려대학교 (안암캠)</h5>
-                            <p class="mb-2"><strong>수학과 (Mathematical Data Science 전공)</strong> | <small>2024.03 - 2025.08</small></p>
-                            <p>이동헌 교수님 | 인공지능수학 연구실 AIML@K 소속</p>
-                            <a href="assets/노경희_KCC_논문_최종.pdf"><p>KCC논문: 자율주행 차량용 인공지능이 공유 저장소 시스템에 발생시키는 I/O 분석</p></a>
-                            <p>학점 3.7/4.5</p>
+                    <div class="position-relative mb-4">  
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">동작 분류를 위한 데이터 분석 및 모델 개발</h5>
+                        <p class="mb-2"><strong>센서 데이터를 통한 1단 줄넘기/2단 줄넘기 분류 모델 개발</strong> | <small>2023.08 - 2024.02</small></p>
+                        <p>#학부연구생 #센서데이터 #줄넘기 #하이퍼파라미터튜닝</p>
+                        <div class="tooltip-container">
+                            <button type="button" class="btn-icon-2" onclick="window.open('/assets/', '_blank')">
+                                <i class="fa-solid fa-paperclip"></i>                          
+                            </button>
+                            <div class="valid-tooltip">보고서</div>
                         </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">대학교(학사) | 건국대학교 (서울캠)</h5>
-                            <p class="mb-2"><strong>물리학과</strong> | <small>2018.03 - 2024.02</small></p>
-                            <a href="assets/졸업논문.pdf"><p>학위 논문: Twistronics에서 비틀린 다중층 그래핀의 전자적 특성</p></a>
-                            <p>학점 2.62/4.5</p>
-                        </div>
-                        <!-- <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div> -->
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">새만금 공공 빅데이터 활용 공모전</h5>
+                        <p class="mb-2"><strong>전기차 수요 예측에 따른 필요한 전기차 충전소 개수 및 설치 장소 제안</strong> | <small>2023.08 - 2023.10</small></p>
+                        <p>#전기차 #시계열예측 #관광데이터 #상관관계</p>
+                        <div class="tooltip-container">
+                            <button type="button" class="btn-icon-2" title="논문" onclick="window.open('/assets/새만금_결과보고서.pdf', '_blank')">
+                                <i class="fa-solid fa-paperclip"></i>                          
+                            </button>
+                            <div class="valid-tooltip">결과보고서</div>
                         </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        <div class="tooltip-container">   
+                            <button type="button" class="btn-icon-2" title="포스터" onclick="window.open('/assets/새만금_대시보드.pdf', '_blank')">
+                                <i class="fa-solid fa-paperclip"></i>                          
+                            </button> 
+                            <div class="valid-tooltip">대시보드</div>
+                        </div> 
+                    </div>
+                    <div class="position-relative mb-4">  
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">전주시 데이터 분석 공모전</h5>
+                        <p class="mb-2"><strong>숙박업소 리뷰 데이터 분석을 통한 개선 방안 도출</strong> | <small>2023.05 - 2023.07</small></p>
+                        <p>#감성분석 #워드클라우드 #네트워크분석 #토픽모델링</p>
+                        <div class="tooltip-container">
+                            <button type="button" class="btn-icon-2" onclick="window.open('/assets/전주시_결과보고서.pdf', '_blank')">
+                                <i class="fa-solid fa-paperclip"></i>                          
+                            </button>
+                            <div class="valid-tooltip">결과 보고서</div>
                         </div>
                     </div>
                 </div>
@@ -285,8 +292,6 @@
         </div>
     </div>
     <!-- Qualification End -->
-
-
 
     <!-- Skill Start -->
     <div class="container-fluid py-5" id="skill">
