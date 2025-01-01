@@ -227,17 +227,14 @@ button {
   border-radius: 0;
 }
 
-.button-group {
-  display: flex;
-  gap: 10px;
-}
 
 .btn-icon {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 20px;
-  font-size: 16px;
+  gap: 5px;
+  /* margin-right: 5px; */
+  padding: 12px 10px;
+  font-size: 15px;
   font-weight: bold;
   color: #fff;
   background-color: transparent;
@@ -7529,7 +7526,7 @@ button.bg-dark:focus {
 }
 
 .shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.15px 0.15px rgba(0, 0, 0, 0.075) !important;
 }
 
 .shadow {
