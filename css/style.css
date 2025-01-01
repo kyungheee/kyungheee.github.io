@@ -254,6 +254,32 @@ button {
   transform: scale(1.1); /* 호버 시 버튼 확대 효과 */
 }
 
+.btn-icon-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  /* margin-right: 5px; */
+  padding: 12px 12px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #477A91;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* transition: background-color 0.3s, transform 0.2s; */
+  text-transform: uppercase;
+}
+
+.btn-icon-2 i {
+  font-size: 20px; /* 아이콘 크기 */
+}
+
+.btn-icon-2:hover {
+  /* background-color: #0056b3;  호버 시 버튼 색상 변경 */
+  transform: scale(1.1); /* 호버 시 버튼 확대 효과 */
+}
+
 button:focus {
   outline: 1px dotted;
   outline: 3px auto -webkit-focus-ring-color;
