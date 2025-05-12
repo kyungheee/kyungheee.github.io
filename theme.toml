@@ -1,24 +1,23 @@
-name = "Poison"
-license = "GPL-3.0 License"
-licenselink = "https://github.com/lukeorth/poison/blob/master/LICENSE.md"
-description = "A pragmatic Hugo theme for bloggers.  Based on the classic \"Hyde\" design by mdo."
-min_version = "0.101.0"
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-# The home page of the theme, where the source can be found.
-homepage = "https://github.com/lukeorth/poison"
-
-# If you have a running demo of the theme.
-demosite = "https://poison.lukeorth.com"
-
-tags = ["blog", "personal", "dark", "dark-mode", "light", "minimal"]
-features = ["blog", "katex", "table-of-contents", "tabs", "dark-mode", "series"]
+name = "Resume"
+license = "MIT"
+licenselink = "https://github.com/eddiewebb/hugo-resume/blob/master/LICENSE.md"
+description = "Personal resume with social handles, skills inventory, work history and portfolio. Includes native CMS editor experience with Netlify CMS. Ported from StartBootstrap 'Resume' theme"
+homepage = "https://edwardwebb.com/"
+tags = ["portfolio","resume","responsive", "cms"]
+features = ["social","mobile","projects","responsive","qr-code","cms"]
+min_version = "0.62"
+defaultContentLanguage = "en"
 
 [author]
-    name = "Luke Orth"
-    homepage = "https://lukeorth.com"
+  name = "Eddie Webbinaro"
+  homepage = "https://webbinaro.dev"
 
-# If Porting existing theme
+
+# If porting an existing theme
 [original]
-    author =  "mdo"
-    homepage = "http://markdotto.com/"
-    repo = "https://www.github.com/mdo/hyde"
+  name = "Start Bootstrap Resume"
+  homepage = "https://startbootstrap.com/template-overviews/resume/"
+  repo = "https://github.com/BlackrockDigital/startbootstrap-resume"

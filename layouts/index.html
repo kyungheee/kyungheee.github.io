@@ -1,21 +1,22 @@
-{{ define "main" -}}
-<div class="posts">
-    {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
-    {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
-    <article class="post">
-        {{ partial "post/info.html" . }}
-        {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
-        {{ .Content }}
-        {{ else }}
-        {{ .Summary }}
-        {{ if .Truncated }}
-        <div class="read-more-link">
-            <a href="{{ .RelPermalink }}">Read More…</a>
-        </div>
-        {{ end }}
-        {{ end }}
-    </article>
-    {{- end }}
-</div>
-{{ partial "pagination.html" . }}
-{{- end }}
+{{ define "main" }}
+   {{ partial "about.html" .}}
+   {{ $projects := slice "creations" "contributions" }}
+   {{ $sections := slice "publications" "blog" }}
+   {{ $site := .Site }}
+   {{ range .Site.Params.sections }}
+      {{ $sectionName := . }}
+      {{ if in $projects . }}
+         {{ with $site.GetPage "section" (printf "projects/%s" .) }}
+            {{ .Scratch.Set "sectionId" $sectionName }} 
+            {{ partial "sectionSummary" . }}
+         {{ end }}
+      {{ else if in $sections . }}
+         {{ with $site.GetPage "section" . }}
+            {{ .Scratch.Set "sectionId" $sectionName }} 
+            {{ partial "sectionSummary" . }}
+         {{ end }}
+      {{ else }}
+         {{ partial (printf "portfolio/%s" . ) $site }}
+      {{ end }}
+   {{ end }}
+{{ end }}

@@ -1,18 +1,8 @@
-{{ define "main" -}}
-<div class="post">
-  {{ partial "post/info.html" . }}
-  {{ .Content }}
-  {{ if (.Site.Params.listmonk) }}
-    {{ partial "post/listmonk_email_newsletters.html" . }}
-  {{ end }}
-  {{ partial "post/navigation.html" . }}
-  {{ if or (.Site.Params.remark42) (.Site.Config.Services.Disqus.Shortname) }}
-    {{ partial "post/comments.html" . }}
-  {{ end }}
-</div>
-{{- end }}
-{{ define "sidebar" }}
-  {{ if and (not .Params.hideToc) (not .Site.Params.hideToc) }}
-    {{ partial "table_of_contents.html" . }}
-  {{ end }}
+{{ define "main" }}
+<section class="resume-section p-3 p-lg-5 d-flex d-column" id="{{ replace .Title " " "-" }}">
+  <div class="my-auto">
+    <h1 class="mb-0"><span class="text-primary">{{ .Title }}</span></h1>
+    {{ .Content }}
+  </div>
+</section>
 {{ end }}
