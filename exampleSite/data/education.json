@@ -1,15 +1,15 @@
 [
     {
-        "school":"[Rochester Institute of Technology](https://rit.edu)",
-        "degree":"Bachelor of Science",
-        "major":"Management Information Systems",
-        "notes":"Beta Gamma Signma, High Honors",
-        "range":"2006 - 2008"
+        "school":"Korea University",
+        "degree":"Master of Mathematics",
+        "major":"Mathematical Data Science 전공",
+        "notes":"이동헌 교수님 인공지능수학 연구실 보조연구원",
+        "range":"2024 - 2026"
     },
     {
-        "school":"Clinton Community College",
-        "degree":"Associate of Applied Science",
-        "major":"Computer Information Systems",
-        "range":"2004 - 2006"
+        "school":"Konkuk University",
+        "degree":"Bachelor of Physics",
+        "notes": "노유신 교수님 광나노소자 연구실 학부연구생",
+        "range":"2018 - 2024"
     }
 ]

@@ -10,4 +10,6 @@ This page represents the landing page for "projects" section. It is also shown u
 IN the dfault theme, "projects" is divided among "Creations" you authored and "contributions" made to others projects.
 
 -->
-<p>This section contains projects <a href="/projects/creations">created</a> and <a href="/projects/contributions">contributed</a> to by Eddie.  Everything listed is an open source effort, the distinction is only my role as owner or contributor.</p>
+<p>우리 연구실에서 한 연구들을 정리한 것을 담았다. <a href="/projects/research">Research</a> </p>
+
+<p>개인적으로 공부한 내용들을 담았다. <a href="/projects/study">Study</a></p>

@@ -1,5 +1,5 @@
-title = "Eddie Webbinaro"
-baseURL = "https://example.com/"
+title = "Kyunghee's Resume"
+baseURL = "https://kyungheee.github.io/"
 theme = "hugo-resume"
 languageCode = "en-us"
 PygmentsCodeFences = true
@@ -8,48 +8,46 @@ PygmentsStyle = "monokai"
 enableGitInfo = false
 
 [params]
-address = "Rollinsford, NH"
-email = "email@domain.com"
+address = "Uijeongbu, South Korea"
+email = "rkh97@naver.com"
 favicon = "/favicon.ico"
-firstName = "Eddie"
-lastName = "Webbinaro"
-phone = "1-555-555-1234"
-profileImage = "img/TechChat.png"
+firstName = "Kyunghee"
+lastName = "Roh"
+phone = "010-2010-4108"
+profileImage = "img/kyungheee.png"
 showQr = true
 showContact = true
 showBoards  = true
-showCertifications = true
+showCertifications = false
 showSocializations = true
-sections = ["skills","publications","creations","contributions","experience","education","blog"]
-
+sections = ["education","experience","creations","publications","blog","notes","skills"]
+customCSS = ["css/resume.css"]
 
 [params.google]
 
 [params.google.analytics]
-trackerID = "XX-123446-01"
+# trackerID = "XX-123446-01"
+
+[[params.handles]] 
+    name = "GitHub"
+    link = "https://github.com/kyungheee"
+    icon = "github"
 
 [[params.handles]]
     name = "LinkedIn"
-    link = "https://www.linkedin.com/in/edwardwebb/"
+    link = "www.linkedin.com/in/kyunghee-4545212b2"
+    icon = "linkedin"
 
 [[params.handles]]
-    name = "GitHub"
-    link = "https://github.com/eddiewebb/"
+    link = "https://aiml-k.github.io/author/kyunghee-roh/"
+    name = "AIML@K"
+    icon = "fa-solid fa-flask"
 
-[[params.handles]]
-    name = "Keybase"
-    link = "https://keybase.io/edwardawebb"
-    icon = "keybase"
-    
-[[params.handles]]
-    name = "Bluesky"
-    link = "https://bsky.app/profile/webbinaro.dev"
-    icon = "bluesky"
+# [[params.handles]]
+#     link = "https://www.notion.so/kyungheee/Resume-2023-4b0f1a2c5d8e4f7b8a6c9d1e0f2a3b4c"
+#     name = "Notion"
+#     icon = "notion"
 
-[[params.handles]]
-    link = "https://stackoverflow.com/users/82880/eddie"
-    name = "Stack Overflow"
-    icon = "stack-overflow"
 
 [outputs]
 home = ["HTML", "JSON"]

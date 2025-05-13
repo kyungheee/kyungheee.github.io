@@ -1,0 +1,174 @@
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.img-right {
+  max-width: 50%; /* 이미지 크기를 50%로 제한 */
+  height: auto;
+  display: block;
+  margin: 0 0 0 auto; /* 오른쪽 정렬 */
+}
+
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-style: normal;
+}
+
+body {
+  font-family: "Gowun Dodum", sans-serif !important;
+  padding-top: 0px;
+  color: #03071b;
+  padding-bottom: 150px;
+}
+
+@media (min-width: 992px) {
+  body {
+    /* padding-top: 10rem; */
+    padding-left: 25rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gowun Dodum", sans-serif !important;
+  /* font-weight: 700; */
+  color: #03071b;
+}
+
+
+h1, h2{
+  /* text-transform: lowercase; */
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 8rem;
+  font-weight: 1000;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.subheading {
+  /* text-transform: lowercase; */
+  font-weight: 500;
+  font-family: "Gowun Dodum", sans-serif !important;
+  font-size: 1.2rem;
+}
+
+.list-social-icons a {
+  color: #03071b;
+}
+
+.list-social-icons a:hover {
+  color: #03071b;
+}
+
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
+
+.list-icons {
+  font-size: 3rem;
+}
+
+.list-icons .list-inline-item i:hover {
+  color: #A66A6F;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-family: "Gowun Dodum", sans-serif !important;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* text-transform: lowercase; */
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  border-bottom: 0px solid #03071b;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: #A66A6F !important;
+}
+
+.text-primary {
+  color: #A66A6F !important;
+}
+
+a {
+  color: #A66A6F;
+}
+
+a:hover, a:focus, a:active {
+  color: #A66A6F;
+}
